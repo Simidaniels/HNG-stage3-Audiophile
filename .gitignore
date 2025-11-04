@@ -1,1 +1,10 @@
 node_modules
+
+# Ignore local environment files
+.env.local
+
+# Ignore build output
+.next/
+
+# Ignore editor settings
+.vscode/
