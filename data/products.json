@@ -1,0 +1,49 @@
+[  {
+    "id": "1",
+    "name": "XX99 Mark I Headphones",
+    "price": 2999,
+    "slug": "xx99-mark-i",
+    "image": "/images/products/xx99i.png",
+    "description": "The new XX99 Mark I headphones are the pinnacle of pristine audio, redefining comfort and sound clarity."
+  },
+  {
+    "id": "2",
+    "name": "XX99 Mark II Headphones",
+    "price": 2999,
+    "slug": "xx99-mark-ii",
+    "image": "/images/products/xx99ii.png",
+    "description": "The new XX99 Mark II headphones are the pinnacle of pristine audio, redefining comfort and sound clarity."
+  },
+  {
+    "id": "3",
+    "name": "XX59 Headphones",
+    "price": 899,
+    "slug": "xx59",
+    "image": "/images/products/xx59.png",
+    "description": "High-fidelity sound meets affordability with the XX59 headphones, perfect for daily listening."
+  },
+  {
+    "id": "4",
+    "name": "ZX9 Speaker",
+    "price": 4500,
+    "slug": "zx9-speaker",
+    "image": "/images/products/zx9.png",
+    "description": "Powerful bass, crystal-clear treble, and sleek design combine in the ZX9 Speaker."
+  },
+  {
+    "id": "5",
+    "name": "ZX7 Speaker",
+    "price": 3500,
+    "slug": "zx7-speaker",
+    "image": "/images/products/zx7.png",
+    "description": "Compact yet mighty, the ZX7 Speaker delivers room-filling sound in a stylish package."
+  },
+  {
+    "id": "6",
+    "name": "YX1 Wireless Earphones",
+    "price": 599,
+    "slug": "yx1-wireless-earphones",
+    "image": "/images/products/yx1.png",
+    "description": "Comfortable, truly wireless earphones with exceptional sound quality and long battery life."
+  }
+]

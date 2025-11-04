@@ -1,0 +1,30 @@
+/* styles/variables.css */
+
+/* Color Palette */
+:root {
+    --color-primary: #ff7a00;
+    --color-secondary: #1f2937;
+    --color-accent: #fbbf24;
+    --color-background: #ffffff;
+    --color-text: #1f2937;
+    --color-error: #ef4444;
+}
+
+/* Font Sizes */
+:root {
+    --font-xs: 0.75rem;
+    --font-sm: 0.875rem;
+    --font-base: 1rem;
+    --font-lg: 1.125rem;
+    --font-xl: 1.25rem;
+    --font-2xl: 1.5rem;
+}
+
+/* Spacing */
+:root {
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 16px;
+    --spacing-lg: 24px;
+    --spacing-xl: 32px;
+}
