@@ -1,6 +1,6 @@
 // app/confirmation/page.tsx
 
-// 'use client';
+'use client';
 
 import { useSearchParams } from 'next/navigation';
 
