@@ -1,29 +1,15 @@
-import { NextResponse } from "next/server";
-import { sendOrderConfirmationEmail } from "../../../lib/email";
-import { OrderConfirmationEmailProps } from "../../../emails/OrderConfirmation";
+// app/api/send-email/route.ts
+import { NextRequest, NextResponse } from "next/server";
+import { sendOrderConfirmationEmail } from "../../../lib/email.server";
 
-export async function POST(req: Request) {
+export async function POST(req: NextRequest) {
+  const data = await req.json();
+
   try {
-    // Parse and type the request body
-    const data = (await req.json()) as OrderConfirmationEmailProps;
-
-    // TypeScript now knows these fields exist
-    if (!data.customerEmail || !data.orderId) {
-      return NextResponse.json(
-        { error: "Missing required fields: customerEmail or orderId" },
-        { status: 400 }
-      );
-    }
-
-    // Send the email
-    await sendOrderConfirmationEmail(data);
-
+    await sendOrderConfirmationEmail(data); // only server code
     return NextResponse.json({ success: true });
-  } catch (error) {
-    console.error("Failed to send order confirmation email:", error);
-    return NextResponse.json(
-      { error: "Failed to send email" },
-      { status: 500 }
-    );
+  } catch (err) {
+    console.error(err);
+    return NextResponse.json({ success: false, error: String(err) }, { status: 500 });
   }
 }
