@@ -1,8 +1,7 @@
-import { NextConfig } from 'next';
-
-const nextConfig: NextConfig = {
+// next.config.ts
+const nextConfig = {
   reactStrictMode: true,
-  // any other settings like images, rewrites, etc.
+  // any other settings
 };
 
 export default nextConfig;
