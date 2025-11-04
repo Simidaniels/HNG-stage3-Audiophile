@@ -1,10 +1,20 @@
 // lib/convexClient.ts
 import { ConvexClient } from "convex/browser";
 
-const CONVEX_URL = process.env.NEXT_PUBLIC_CONVEX_URL || "";
+let convex: ConvexClient | null = null;
 
-if (!CONVEX_URL) {
-  throw new Error("NEXT_PUBLIC_CONVEX_URL is not set in .env.local");
+export function getConvexClient() {
+  // Only run in the browser
+  if (typeof window !== "undefined") {
+    if (!convex) {
+      const url = process.env.NEXT_PUBLIC_CONVEX_URL;
+      if (!url) {
+        throw new Error("NEXT_PUBLIC_CONVEX_URL is not set");
+      }
+      convex = new ConvexClient(url);
+    }
+    return convex;
+  }
+  // Return null on server to prevent build errors
+  return null;
 }
-
-export const convex = new ConvexClient(CONVEX_URL);

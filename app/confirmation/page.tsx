@@ -4,6 +4,8 @@
 
 import { useSearchParams } from 'next/navigation';
 
+export const dynamic = 'force-dynamic';
+
 export default function ConfirmationPage() {
   const searchParams = useSearchParams();
   const orderId = searchParams.get('orderId');
