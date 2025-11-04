@@ -1,4 +1,6 @@
 // components/checkout/Summary.tsx
+import Link from "next/link";
+
 export default function Summary() {
   const cartItems = [
     { name: 'Headphones', quantity: 1, price: 299.99 },
@@ -25,6 +27,12 @@ export default function Summary() {
       <div className="mb-2 flex justify-between"><span>Shipping</span><span>${shipping.toFixed(2)}</span></div>
       <div className="mb-2 flex justify-between"><span>Tax</span><span>${tax.toFixed(2)}</span></div>
       <div className="font-bold flex justify-between mt-4"><span>Total</span><span>${total.toFixed(2)}</span></div>
+
+      {/* Button to go to payment section */}
+     <Link href="/checkout" className="block mt-6 ...">
+  Proceed to Payment
+</Link>
+
     </div>
   );
 }

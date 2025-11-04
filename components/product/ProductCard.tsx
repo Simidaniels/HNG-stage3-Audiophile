@@ -1,4 +1,6 @@
 // components/product/ProductCard.tsx
+"use client";
+
 import Image from "next/image";
 
 interface ProductCardProps {
@@ -24,6 +26,15 @@ export default function ProductCard({ name, price, image, description }: Product
       <h3 className="text-lg font-semibold mb-2">{name}</h3>
       <p className="text-gray-700 font-medium">${price.toFixed(2)}</p>
       <p className="description">{description}</p>
+      
+      {/* ✅ Add to Cart Button */}
+      <button
+        className="add-to-cart-btn"
+        onClick={() => alert(`${name} added to cart!`)}
+      >
+        Add to Cart
+      </button>
+
     </div>
   );
 }

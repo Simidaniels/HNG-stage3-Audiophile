@@ -1,17 +1,2 @@
 /* styles/components/header.css */
 
-header {
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
-}
-
-header nav a {
-    transition: color 0.2s;
-}
-
-header nav a:hover {
-    color: var(--color-primary);
-}
-
-header .logo {
-    height: 40px;
-}

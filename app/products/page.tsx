@@ -1,10 +1,10 @@
-// app/products/[slug]/page.tsx
-import ProductDetails from '../../components/product/ProductDetails';
+// app/products/page.tsx
+import ProductGrid from '../../components/product/ProductGrid';
 
-export default function ProductPage() {
+export default function ProductsPage() {
   return (
     <section className="container mx-auto px-4 py-8">
-      <ProductDetails />
+      <ProductGrid />
     </section>
   );
 }

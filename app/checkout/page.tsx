@@ -1,11 +1,21 @@
 // app/checkout/page.tsx
-import CheckoutForm from '../../components/checkout/CheckoutForm';
+import CheckoutForm from '@/components/checkout/CheckoutForm';
+// import Summary from '@/components/checkout/Summary';
+import PaymentSection from '@/components/checkout/PaymentSection';
 
 export default function CheckoutPage() {
   return (
-    <section className="container mx-auto px-4 py-8">
-      <h1 className="text-2xl font-bold mb-4">Checkout</h1>
-      <CheckoutForm />
-    </section>
+    <div className="container mx-auto px-4 py-8 flex flex-col lg:flex-row gap-8">
+      {/* Left: Checkout Form */}
+      <div className="lg:w-2/3">
+        <CheckoutForm />
+      </div>
+
+      {/* Right: Summary & Payment */}
+      <div className="lg:w-1/3 space-y-6">
+        {/* <Summary /> */}
+        <PaymentSection />
+      </div>
+    </div>
   );
 }
