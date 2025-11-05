@@ -64,6 +64,12 @@ It’s the anchor that reminds visitors of the world they’re exploring.
 
 ---
 
+
+
+I would have to go back and rebuild the app/confirmation/page.tsx...
+I had to use an emptyPage but i couldn't meet the deadline
+
+
 ## How to Embark on Your Own Journey
 
 ## Yet to be perfected, I had to rush it to meet the deadline at 11:59pm today
